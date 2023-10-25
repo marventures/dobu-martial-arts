@@ -1,3 +1,21 @@
+/* CSS VARIABLES */
+:root {
+  --ORANGE: #e85d04;
+  --LIGHT-ORANGE: #f48c06;
+  --BLACK: #303030;
+  --GREEN: #52b788;
+  --SLATE: #434455;
+  --LIGHT-SLATE: #8e8f99;
+  --CORNFLOWER: #edf2f4;
+  --CLOUD: #f4f4fd;
+  --NAVY-BLUE-OVERLAY: rgba(46, 47, 66, 0.4);
+  --GRAY: rgba(46, 47, 66, 0.7);
+  --WHITE: #ffffff;
+  --DAIRY: #fcfcfc;
+}
+
+/* ------------------------------------------------- */
+
 /* CSS RESET */
 p,
 h1,
@@ -22,11 +40,14 @@ img {
 }
 /* END OF CSS RESET */
 
+/* ------------------------------------------------- */
+
 /* GENERAL STYLES */
 body {
   font-family: 'Nunito', sans-serif;
   line-height: 24px;
-  letter-spacing: 0.32px;
+  letter-spacing: 0.03em;
+  color: var(--BLACK, #303030);
 }
 
 .list {
@@ -42,19 +63,224 @@ body {
 }
 
 .button {
+  display: block;
+  padding: 5px 10px;
+  width: 150px;
+  height: 56px;
+
   /* button - doesn't automatically inherit font-family*/
   font-family: inherit;
-  letter-spacing: 0.64px;
+  font-weight: 500;
   text-transform: capitalize;
   cursor: pointer;
+
+  color: var(--WHITE, #ffffff);
+  background-color: var(--ORANGE, #e85d04);
+  border: none;
+  border-radius: 4px;
+
+  transition: background-color 250ms linear;
 }
 
+.button:hover,
+.button:focus {
+  background-color: var(--LIGHT-ORANGE, #f48c06);
+}
+
+.section-title {
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  color: var(--BLACK, #303030);
+}
+/* END OF GENERAL STYLES */
+
+/* ------------------------------------------------- */
+
+/* HEADER */
 .logo {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-weight: 800;
-  line-height: 21px; /* 116.667% */
-  letter-spacing: 0.54px;
   text-transform: uppercase;
 }
-/* END OF GENERAL STYLES */
+
+.logo-half {
+  color: var(--ORANGE, #303030);
+}
+
+.header-list {
+}
+
+.header-link {
+  font-weight: 700;
+  transition: color 250ms linear;
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--ORANGE, #e85d04);
+}
+
+.active {
+  position: relative;
+  color: var(--ORANGE, #e85d04);
+}
+
+.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  border: 2px solid var(--ORANGE, #e85d04);
+}
+/* END OF HEADER STYLES */
+
+/* ------------------------------------------------- */
+
+/* HERO SECTION */
+.hero {
+  background-color: var(--GRAY, rgba(46, 47, 66, 0.7));
+  color: var(--WHITE);
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.hero-subtitle {
+  font-weight: 500;
+}
+
+.hero-button {
+  margin: 0 auto;
+}
+
+/* END OF HERO SECTION STYLES */
+
+/* ------------------------------------------------- */
+
+/* INSTRUCTORS SECTION */
+.instructors-list {
+}
+
+.instructors-item {
+}
+
+.instructors-name {
+  font-size: 20px;
+}
+
+.instructors-description {
+  color: var(--SLATE, #434455);
+}
+/* END OF INSTRUCTORS SECTIONS STYLES */
+
+/* ------------------------------------------------- */
+
+/* PRICES SECTION */
+.prices {
+  background-color: var(--BLACK, #303030);
+  color: var(--WHITE, #ffffff);
+}
+
+.prices-title {
+  color: var(--WHITE, #ffffff);
+}
+
+.prices-list {
+}
+
+.prices-item {
+  width: 264px;
+  height: 400px;
+  color: var(--BLACK, #303030);
+  background-color: var(--WHITE, #ffffff);
+}
+
+.prices-item-alternate {
+  color: var(--WHITE, #ffffff);
+  background-color: var(--ORANGE, #e85d04);
+}
+
+.prices-name {
+  font-size: 20px;
+}
+
+.prices-price {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.prices-button {
+  color: var(--BLACK, #303030);
+  background-color: var(--WHITE, #ffffff);
+}
+
+.prices-button:hover,
+.prices-button:focus {
+  color: var(--WHITE, #ffffff);
+  background-color: var(--SLATE);
+}
+
+/* END OF PRICES SECTION */
+
+/* ------------------------------------------------- */
+
+/* SCHEDULE SECTION */
+.schedule {
+}
+/* END OF SCHEDULE SECTION STYLES */
+
+/* ------------------------------------------------- */
+
+/* FACILITIES SECTION */
+.facilities {
+}
+
+.facilities-list {
+}
+
+.facilities-item {
+}
+
+.facilities-name {
+  font-size: 20px;
+}
+/* END OF FACILITIES SECTION STYLES */
+
+/* ------------------------------------------------- */
+/* FOOTER */
+.footer {
+  background-color: var(--BLACK, #303030);
+  color: var(--WHITE, #ffffff);
+}
+.footer-list {
+}
+
+.footer-list::before {
+  content: '';
+  width: 100px;
+  height: 1px;
+  background-color: var(--WHITE, #ffffff);
+}
+
+.footer-link {
+  font-weight: 700;
+  transition: color 250ms linear;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--ORANGE, #e85d04);
+}
+/* END OF FOOTER STYLES */
+
+/* ------------------------------------------------- */
