@@ -1,0 +1,60 @@
+/* CSS RESET */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* END OF CSS RESET */
+
+/* GENERAL STYLES */
+body {
+  font-family: 'Nunito', sans-serif;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
+
+.list {
+  /* remove bullet points in lists */
+  list-style: none;
+}
+
+.link {
+  /* remove underline in links */
+  text-decoration: none;
+  /* a tags doesn't inherit font-color */
+  color: inherit;
+}
+
+.button {
+  /* button - doesn't automatically inherit font-family*/
+  font-family: inherit;
+  letter-spacing: 0.64px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 21px; /* 116.667% */
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+}
+/* END OF GENERAL STYLES */
