@@ -458,6 +458,81 @@ body {
 /* SCHEDULE SECTION */
 .schedule {
 }
+
+.accordion-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--WHITE, #ffffff);
+}
+
+.accordion-item {
+  width: 500px;
+
+  @media (max-width: 428px) {
+    width: 90%;
+  }
+}
+
+.accordion-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background-color: var(--LIGHT-ORANGE, #f48c06);
+  color: var(--WHITE, #ffffff);
+  margin: 5px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.accordion-icon {
+  padding-left: 15px;
+  display: inline-block;
+  height: 60px;
+  width: 50px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 60px;
+  background-color: var(--ORANGE, #e85d04);
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.accordion-day {
+  font-size: 20px;
+}
+
+.accordion-body {
+  display: none;
+  padding: 15px;
+  background-color: var(--WHITE, #ffffff);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.accordion-item:nth-child(1) .accordion-body {
+  display: block;
+}
+
+.accordion-body-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.accordion-body-item::after {
+  content: '';
+  width: 100px;
+  height: 1px;
+  background-color: var(--BLACK, #303030);
+  flex-grow: 1;
+}
+
+.accordion-body-subtext:last-child {
+  /* it will be displayed after any elements with a lower order value */
+  order: 1;
+}
 /* END OF SCHEDULE SECTION STYLES */
 
 /* ------------------------------------------------- */
