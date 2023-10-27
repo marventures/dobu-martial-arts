@@ -604,10 +604,6 @@ body {
   }
 }
 
-.accordion-item:nth-child(1) .accordion-body {
-  display: block;
-}
-
 .accordion-body-item {
   display: flex;
   justify-content: space-between;
