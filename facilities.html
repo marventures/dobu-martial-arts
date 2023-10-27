@@ -25,6 +25,7 @@
   <body>
     <!-- HEADER -->
     <header id="header"></header>
+    <header id="header-mob"></header>
 
     <!-- MAIN -->
     <main>
@@ -95,13 +96,47 @@
     <!-- FOOTER -->
     <footer class="footer" id="footer"></footer>
 
+    <!-- HAMBURGER MENU -->
+    <div>
+      <!-- Hamburger Menu Open -->
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="menu-icon" width="32" height="32">
+          <use href="./images/icons.svg#icon-hamburger-open"></use>
+        </svg>
+      </button>
+
+      <!-- Hamburger Menu Close Icon and Navigations-->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <!-- Hamburger Menu Close Icon-->
+        <button class="menu-toggle js-close-menu">
+          <svg class="menu-close-icon" width="32" height="32">
+            <use href="./images/icons.svg#icon-hamburger-close"></use>
+          </svg>
+        </button>
+        <ul class="mob-list list">
+          <li><a class="mob-link link" href="./index.html">About</a></li>
+          <li><a class="mob-link link" href="./prices.html">Prices</a></li>
+          <li><a class="mob-link link" href="./schedule.html">Schedule</a></li>
+          <li>
+            <a class="mob-link current link" href="./facilities.html"
+              >Facilities</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <!-- JQUERY CDN-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <!-- DYNAMIC CONTENT LOADER -->
     <script src="./js/content-loader.js"></script>
 
-    <!-- MOBILE MENU SCRIPT -->
+    <!-- HAMBURGER MENU SCRIPT -->
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

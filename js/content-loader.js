@@ -33,5 +33,8 @@ $('#header').load('_common-header.html', () => {
   });
 });
 
+// load common hamburger content
+$('#hamburger-menu').load('_common-mob-menu.html');
+
 // Load common footer content
 $('#footer').load('_common-footer.html');
