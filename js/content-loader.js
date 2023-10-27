@@ -3,7 +3,7 @@
 //
 // Version 1.0
 //
-// Copyright (c) 2023, [Marvin M. Pacis]
+// Copyright (c) 2023, Marvin M. Pacis
 //
 // The Dynamic Content Loader script is responsible for loading common
 // header and footer content into the respective sections of the HTML

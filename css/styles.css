@@ -239,19 +239,16 @@ body {
 /* ------------------------------------------------- */
 
 /* INSTRUCTORS SECTION */
+
 .instructors-list {
   display: flex;
   gap: 30px;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
 .instructors-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   border-radius: 0px 0px 4px 4px;
   background-color: var(--WHITE, #ffffff);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
@@ -267,6 +264,101 @@ body {
 .instructors-description {
   color: var(--SLATE, #434455);
 }
+
+.instructors-social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.instructors-social-item {
+  width: 40px;
+  height: 40px;
+}
+
+.instructors-social-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--WHITE, #ffffff);
+  background-color: var(--ORANGE, #e85d04);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.instructors-social-link:hover,
+.instructors-social-link:focus {
+  background-color: var(--LIGHT-ORANGE, #f48c06);
+}
+
+.instructors-social-icon {
+  fill: currentColor;
+}
+
+.instructors-control-list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+}
+
+.instructors-control-item {
+  width: 40px;
+  height: 40px;
+}
+
+.instructors-control-previous,
+.instructors-control-next {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  color: var(--BLACK, #303030);
+  background-color: transparent;
+  transition: color 250ms linear;
+  cursor: pointer;
+}
+
+.instructors-control-previous:hover,
+.instructors-control-next:hover {
+  color: var(--LIGHT-SLATE, #8e8f99);
+}
+
+.instructors-control-icon {
+  fill: currentColor;
+}
+
+/* TNS LIBRARY */
+.tns-nav {
+  text-align: center;
+}
+
+.tns-nav button {
+  margin-top: 30px;
+  border: none;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  margin: 60px 5px 10px;
+  background-color: var();
+}
+
+.tns-nav .tns-nav-active {
+  background-color: var(--LIGHT-SLATE);
+}
+
 /* END OF INSTRUCTORS SECTIONS STYLES */
 
 /* ------------------------------------------------- */
@@ -338,6 +430,30 @@ body {
 /* END OF PRICES SECTION */
 
 /* ------------------------------------------------- */
+/* SPECIALIST SECTION */
+.specialist-item {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 15px;
+}
+
+.specialist-item::after {
+  content: '';
+  width: 100px;
+  height: 1px;
+  background-color: var(--BLACK, #303030);
+  flex-grow: 1;
+}
+
+.specialist-subtext:last-child {
+  /* it will be displayed after any elements with a lower order value */
+  order: 1;
+}
+
+/* END OF SPECIALIST SECTION */
+/* ------------------------------------------------- */
 
 /* SCHEDULE SECTION */
 .schedule {
@@ -347,17 +463,28 @@ body {
 /* ------------------------------------------------- */
 
 /* FACILITIES SECTION */
-.facilities {
-}
-
 .facilities-list {
-}
-
-.facilities-item {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 60px;
 }
 
 .facilities-name {
   font-size: 20px;
+}
+
+.facilities-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  height: 420px;
+  border: 1px solid var(--CORNFLOWER, #edf2f4);
+  background: var(--WHITE, #fff);
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 /* END OF FACILITIES SECTION STYLES */
 
