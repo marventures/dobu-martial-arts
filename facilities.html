@@ -19,6 +19,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
 
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- Own CSS -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -31,10 +34,10 @@
     <main>
       <!-- Facilities Section -->
       <section class="facilities section" id="facilities">
-        <h2 class="section-title">Facilities</h2>
+        <h2 class="section-title" data-aos="fade-up">Facilities</h2>
         <div class="container">
           <ul class="facilities-list list">
-            <li class="facilities-item">
+            <li class="facilities-item" data-aos="flip-left">
               <img
                 src="./images/facilities-1-training.jpg"
                 alt="Training Area"
@@ -43,7 +46,7 @@
               />
               <h3 class="facilities-name">Training Area</h3>
             </li>
-            <li class="facilities-item">
+            <li class="facilities-item" data-aos="flip-right">
               <img
                 src="./images/facilities-2-gym.jpg"
                 alt="Fitness Gym"
@@ -52,7 +55,7 @@
               />
               <h3 class="facilities-name">Fitness Gym</h3>
             </li>
-            <li class="facilities-item">
+            <li class="facilities-item" data-aos="flip-left">
               <img
                 src="./images/facilities-3-sauna.jpg"
                 alt="Sauna and Steam Room"
@@ -61,7 +64,7 @@
               />
               <h3 class="facilities-name">Sauna and Steam Room</h3>
             </li>
-            <li class="facilities-item">
+            <li class="facilities-item" data-aos="flip-right">
               <img
                 src="./images/facilities-4-changing.jpg"
                 alt="Changing Rooms"
@@ -70,7 +73,7 @@
               />
               <h3 class="facilities-name">Changing Rooms</h3>
             </li>
-            <li class="facilities-item">
+            <li class="facilities-item" data-aos="flip-left">
               <img
                 src="./images/facilities-5-bar.jpg"
                 alt="Health-Focused Juice Bar"
@@ -79,7 +82,7 @@
               />
               <h3 class="facilities-name">Health-Focused Juice Bar</h3>
             </li>
-            <li class="facilities-item">
+            <li class="facilities-item" data-aos="flip-right">
               <img
                 src="./images/facilities-6-proshop.jpg"
                 alt="Pro Shop for Martial Arts Gear"
@@ -138,5 +141,13 @@
 
     <!-- HAMBURGER MENU SCRIPT -->
     <script src="./js/mobile-menu.js"></script>
+
+    <!-- AOS SCRIPTS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- INITIALIZE AOS -->
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -19,6 +19,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
 
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- Own CSS -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -32,9 +35,9 @@
       <!-- Prices Section -->
       <section class="prices section" id="prices">
         <div class="container prices-container">
-          <h2 class="section-title prices-title">Prices</h2>
+          <h2 class="section-title prices-title" data-aos="fade-up">Prices</h2>
           <ul class="prices-list list">
-            <li class="prices-item">
+            <li class="prices-item" data-aos="flip-left">
               <div class="prices-wrap">
                 <h3 class="prices-name">Basic</h3>
                 <p class="prices-price">£25</p>
@@ -46,7 +49,7 @@
                 <p>2 sessions per week</p>
               </div>
             </li>
-            <li class="prices-item prices-item-alternate">
+            <li class="prices-item prices-item-alternate" data-aos="flip-left">
               <div class="prices-wrap">
                 <h3 class="prices-name">*Intermediate</h3>
                 <p class="prices-price">£35</p>
@@ -60,7 +63,7 @@
                 <p>3 sessions per week</p>
               </div>
             </li>
-            <li class="prices-item">
+            <li class="prices-item" data-aos="flip-left">
               <div class="prices-wrap">
                 <h3 class="prices-name">*Advanced</h3>
                 <p class="prices-price">£45</p>
@@ -72,7 +75,7 @@
                 <p>5 sessions per week</p>
               </div>
             </li>
-            <li class="prices-item prices-item-alternate">
+            <li class="prices-item prices-item-alternate" data-aos="flip-left">
               <div class="prices-wrap">
                 <h3 class="prices-name">*Elite</h3>
                 <p class="prices-price">£60</p>
@@ -101,8 +104,10 @@
       <!-- Specialist Section -->
       <section class="specialist section" id="specialist">
         <div class="container specialist-container">
-          <h2 class="section-title">Specialist Courses and Fitness Training</h2>
-          <ul class="list specialist-list">
+          <h2 class="section-title" data-aos="fade-up">
+            Specialist Courses and Fitness Training
+          </h2>
+          <ul class="list specialist-list" data-aos="zoom-in">
             <li class="specialist-item">
               <p class="specialist-subtext">
                 Six-week beginners&apos; self-defence course (2 &times; 1-hour
@@ -172,5 +177,13 @@
 
     <!-- HAMBURGER MENU SCRIPT -->
     <script src="./js/mobile-menu.js"></script>
+
+    <!-- AOS SCRIPTS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- INITIALIZE AOS -->
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -25,6 +25,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
     />
 
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- Own CSS -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -47,7 +50,7 @@
 
       <!-- About Us Section -->
       <section class="about section" id="about">
-        <h2 class="section-title">About Us</h2>
+        <h2 class="section-title" data-aos="fade-up">About Us</h2>
         <div class="container about-container">
           <ul class="list about-list">
             <li>
@@ -97,10 +100,10 @@
           </ul>
 
           <div class="about-wrap">
-            <h3 class="about-title">
+            <h3 class="about-title" data-aos="fade-left">
               The Best Martial Arts Facility in Your City
             </h3>
-            <p>
+            <p data-aos="fade-rig">
               DoBu Martial Arts is a community-driven training center run by
               Master Mauricio Gomez that aims to empower people via in-depth
               martial arts education, physical training, and specialized
@@ -115,7 +118,7 @@
       <!-- Instructors Section -->
       <section class="instructors section" id="instructors">
         <div class="container instructors-container">
-          <h2 class="section-title">Instructors</h2>
+          <h2 class="section-title" data-aos="fade-up">Instructors</h2>
           <ul class="instructors-list list">
             <li class="instructors-item">
               <img
@@ -124,8 +127,12 @@
                 width="264"
                 height="260"
               />
-              <h3 class="instructors-name">Mauricio Gomez</h3>
-              <p class="instructors-description">Gym Owner</p>
+              <h3 class="instructors-name" data-aos="fade-right">
+                Mauricio Gomez
+              </h3>
+              <p class="instructors-description" data-aos="fade-left">
+                Gym Owner
+              </p>
 
               <ul class="instructors-social-list list">
                 <li class="instructors-social-item">
@@ -185,8 +192,8 @@
                 width="264"
                 height="260"
               />
-              <h3 class="instructors-name">Sarah Nova</h3>
-              <p class="instructors-description">
+              <h3 class="instructors-name" data-aos="fade-right">Sarah Nova</h3>
+              <p class="instructors-description" data-aos="fade-left">
                 Assistant Martial Arts Coach
               </p>
               <ul class="instructors-social-list list">
@@ -247,8 +254,10 @@
                 width="264"
                 height="260"
               />
-              <h3 class="instructors-name">Morris Davis</h3>
-              <p class="instructors-description">
+              <h3 class="instructors-name" data-aos="fade-right">
+                Morris Davis
+              </h3>
+              <p class="instructors-description" data-aos="fade-left">
                 Assistant Martial Arts Coach
               </p>
               <ul class="instructors-social-list list">
@@ -309,8 +318,12 @@
                 width="264"
                 height="260"
               />
-              <h3 class="instructors-name">Traci Santiago</h3>
-              <p class="instructors-description">Fitness Coach</p>
+              <h3 class="instructors-name" data-aos="fade-right">
+                Traci Santiago
+              </h3>
+              <p class="instructors-description" data-aos="fade-left">
+                Fitness Coach
+              </p>
               <ul class="instructors-social-list list">
                 <li class="instructors-social-item">
                   <a
@@ -369,8 +382,12 @@
                 width="264"
                 height="260"
               />
-              <h3 class="instructors-name">Harpreet Kaur</h3>
-              <p class="instructors-description">Fitness Coach</p>
+              <h3 class="instructors-name" data-aos="fade-right">
+                Harpreet Kaur
+              </h3>
+              <p class="instructors-description" data-aos="fade-left">
+                Fitness Coach
+              </p>
               <ul class="instructors-social-list list">
                 <li class="instructors-social-item">
                   <a
@@ -429,8 +446,10 @@
                 width="264"
                 height="260"
               />
-              <h3 class="instructors-name">Guy Victory</h3>
-              <p class="instructors-description">
+              <h3 class="instructors-name" data-aos="fade-right">
+                Guy Victory
+              </h3>
+              <p class="instructors-description" data-aos="left">
                 Assistant Martial Arts Coach
               </p>
               <ul class="instructors-social-list list">
@@ -630,5 +649,13 @@
 
     <!-- TINY SLIDER SCRIPT -->
     <script src="./js/tiny-slider.js"></script>
+
+    <!-- AOS SCRIPTS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- INITIALIZE AOS -->
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
